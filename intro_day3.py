@@ -24,11 +24,44 @@ class Course(object):
         self.lecturer_name = lecturer_name
 
     def __repr__(self):
+
         return "{} {}".format(self.course_name, self.lecturer_name)
+
+
+class Question(object):
+    """
+    This is a blueprint that stores the question and corresponding answer
+    """
+
+    def __init__(self, question_statement, correct_answer ):
+        self.question_statement = question_statement
+        self.correct_answer = correct_answer
     
-student_object = Student("Thapelo", "Seletisha", "1234567")
-course_object = Course("Linear Algebra", "MATH2025", "Zellenyik")
+
+    def __repr__(self):
+
+        return "{} {}".format(self.question_statement, self.correct_answer)
+
+
+    def get_ask_and_evaluate(self):
+        """
+        This method prints the question, accepts solution from the student 
+        and returns True if the solution is correct else it returns False.
+        """
+
+        print(self.question_statement)
+        user_solution =   input("")
+        if user_solution == self.correct_answer:
+            
+            return True
+        else:
+            return False        
 
 
 
+# student_object = Student("Thapelo", "Seletisha", "1234567")
+# course_object = Course("Linear Algebra", "MATH2025", "Zellenyik")
+question_object = Question("Was Mandela born on the 18th of July 1950?", "False")
+question_1 =  question_object.get_ask_and_evaluate()
+print(question_1)
 
