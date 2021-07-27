@@ -58,7 +58,6 @@ class Question(object):
             return False        
 
 
-
 # student_object = Student("Thapelo", "Seletisha", "1234567")
 # course_object = Course("Linear Algebra", "MATH2025", "Zellenyik")
 question_object = Question("Was Mandela born on the 18th of July 1950?", "False")
