@@ -74,16 +74,30 @@ class Assessment(object):
 
         return self.questions
 
-    
+
+
+   
 
      
 
 
 
 
-# student_object = Student("Thapelo", "Seletisha", "1234567")
-# course_object = Course("Linear Algebra", "MATH2025", "Zellenyik")
-question_object = Question("Was Mandela born on the 18th of July 1950?", "False")
-question_1 =  question_object.get_ask_and_evaluate()
-print(question_1)
+# # student_object = Student("Thapelo", "Seletisha", "1234567")
+# # course_object = Course("Linear Algebra", "MATH2025", "Zellenyik")
+# question_object = Question("Was Mandela born on the 18th of July 1950?", "False")
 
+# assessment_object = Assessment()
+# questions = assessment_object.add_question_and_solutions("Was Mandela born on the 18th of July 1950?", "False")
+# print(questions)
+# # question_1 =  question_object.get_ask_and_evaluate()
+# # print(question_1)
+
+wordlist = ['zebra', 'piano', 'fly']
+deflist = ['is an animal','is a musical instrument','is an insect']
+
+d = dict((item, definition) for item,definition in zip(wordlist,deflist))
+
+request = input("Write a word: ")
+if request in d:
+    print (d[request])
