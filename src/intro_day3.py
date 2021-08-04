@@ -57,6 +57,19 @@ class Question(object):
         else:
             return False        
 
+class Assessment(object):
+    """
+    This is ablue print for putting questions together to ask students
+    """
+    def __init__(self, title,date):
+        self.title = title
+        self.date = date
+        self.question = list()
+        self.mark = 0
+
+    def __repr__(self):
+        
+        return " "
 
 # student_object = Student("Thapelo", "Seletisha", "1234567")
 # course_object = Course("Linear Algebra", "MATH2025", "Zellenyik")
