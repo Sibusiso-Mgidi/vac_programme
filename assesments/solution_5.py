@@ -1,5 +1,4 @@
 class Vehicle:
-    # Class attribute
     color = "White"
 
     def __init__(self, name, max_speed, mileage):
