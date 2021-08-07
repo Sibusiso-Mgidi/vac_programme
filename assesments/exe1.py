@@ -1,4 +1,4 @@
-class Vehicle(object):
+class Vehicle():
     """
     Blueprint for storing a vehicle's mileage and max_speed
     """

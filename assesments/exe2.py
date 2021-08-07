@@ -1,4 +1,4 @@
-class Vehicle(object):
+class Vehicle():
     """
     Stores a vehicle's details
     """
