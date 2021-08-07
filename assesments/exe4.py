@@ -1,6 +1,6 @@
 class Vehicle:
     """
-    Stores a vehicle's mileage and max_speed
+                                                                                                                                                                                                
     """
     def __init__(self, name, max_speed, mileage):
         self.name = name

@@ -14,3 +14,8 @@ class Bus(Vehicle):
     Bus inherits from vehicle
     """
     pass
+
+bus_1 = Bus("School Volvo", 180, 12)
+print("Vehicle Name:", bus_1.name, 
+      "Speed:", bus_1.max_speed,
+      "Mileage:", bus_1.mileage) 
